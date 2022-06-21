@@ -8,6 +8,8 @@ export default defineConfig({
   plugins: [svelte(), windicss()],
   resolve: {
     alias: {
+      '@root': resolve('src'),
+      '@root/*': resolve('src/*'),
       '@lib': resolve('src/lib'),
       '@lib/*': resolve('src/lib/*'),
       '@assets': resolve('src/assets'),
